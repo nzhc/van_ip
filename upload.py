@@ -14,7 +14,7 @@ class UploadManager:
         # try:
         res = requests.get('http://myip.ipip.net', timeout=5).text
         self.ip = re.findall(r'[0-9]+(?:\.[0-9]+){3}', res)
-        self.ip = ['ppppppppp']
+        self.ip = ['ssssss']
         print(self.ip)
         with open(os.path.join(self.path, 'ipaddress.txt'), 'w') as f:
             f.write(self.ip[0])
