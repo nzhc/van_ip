@@ -12,7 +12,8 @@ class UploadManager:
         # 访问http://myip.ipip.net获取当前公网ip，并写入ipaddress.txt文件
         try:
             res = requests.get('http://myip.ipip.net', timeout=5).text
-            self.ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}',res)
+            #self.ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}',res)
+            self.ip=['asdwadsasa']
             print(self.ip)
             with open(os.path.join(self.path,'ipaddress.txt'),'w') as f:
                 f.write(self.ip[0])
